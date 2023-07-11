@@ -7,6 +7,7 @@ from mkdocs.config.defaults import MkDocsConfig
 def list_existing_pages(config: MkDocsConfig, files: Files):
     pages = []
     output_dir = config['site_dir']
+    print(output_dir)
     for file in files:
         if file.is_documentation_page() or file.is_media_file():
             pages.append(file)

@@ -1,6 +1,12 @@
+# https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html
 site_name: digital-garden-blog # Change this to your site name
 site_description: digital-garden-blog
 site_url: https://cskwork.github.io/digital-garden-blog # Change this to your site URL
+# site_dir: 
+
+#nav:
+  #- Home: notes/index.md
+  #- digital-garden-blog: notes/index.md
 
 theme:
     name: 'material'
