@@ -70,13 +70,16 @@ You can configure :
 
 To run the blog locally, you need to install the requirements and run `mkdocs serve`.
 
-`cd publish_blog pip install -r requirements.txt mkdocs serve`
+`cd publish_blog pip install -r requirements.txt` 
+`mkdocs serve`
 
 A tip: You can use a [conda](https://docs.conda.io/en/latest/) environment here (or a venv, but I prefer conda). Just use this command:
 
 ```bash
 conda create -n Publisher python=3.11
 conda activate Publisher
+pip install -r requirements.txt
+mkdocs serve
 ```
 
 Run this command just before running `pip install`.
