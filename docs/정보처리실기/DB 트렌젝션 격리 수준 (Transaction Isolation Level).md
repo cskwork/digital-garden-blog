@@ -8,7 +8,7 @@
 
 ![](https://velog.velcdn.com/images/csk917work/post/fd906a30-8a5d-4390-af55-830d26f64417/image.png)
 
-### LV.0 READ UNCOMMITED
+### LV.0 __
 
 #### 정의
 
@@ -16,9 +16,9 @@
 
 #### 발생가능 문제
 
-- **Dirty read** : UPDATE 또는 INSERT가 되기 전에 읽어서 최신 데이터로 읽을 수 없거나 오류가 발생함.
+- __ : UPDATE 또는 INSERT가 되기 전에 읽어서 최신 데이터로 읽을 수 없거나 오류가 발생함.
 
-### LV.1 READ COMMITED
+### LV.1 __
 
 #### 정의
 
@@ -28,7 +28,7 @@
 
 - **Non-repeatable Read** : 하나의 트렌젝션이 같은 값 조회시 다른 값이 검색되는 현상. 첫 번째 조회시 트렌젝션하고 두 번째 조회시 트렌젝션 정보가 달라짐.
 
-### LV.2 REAPEATABLE READ
+### LV.2 __
 
 #### 정의
 
@@ -36,9 +36,9 @@
 
 #### 발생가능 문제
 
-- **Phantom Read** : 유령처럼 데이터가 사라지가너 없어지는 현상. 트렌젝션 시적점에서 없던 데이터가 끝나는 시점에서는 조회가 됨.
+- __ : 유령처럼 데이터가 사라지가너 없어지는 현상. 트렌젝션 시적점에서 없던 데이터가 끝나는 시점에서는 조회가 됨.
 
-### LV.3 SERIALIZABLE
+### LV.3 __
 
 #### 정의
 
@@ -46,7 +46,19 @@
 
 #### 발생가능 문제
 
-- Dirty Read, Non-Repeatable Read, Phantom Read 등의 정합성 문제는 없지만 동시 처리 성능이 가장 떨어짐.
+- Dirty Read, Non-Repeatable Read, Phantom Read 등의 정합성 문제는 없지만 동시 처리 성능이 가장 떨어짐. 
+
+---
+
+Read UnCommitted 
+Dirty Read
+Non-Repeatable read
+Repeatable Read
+Phantom Read
+Serializable
+
+---
+
 
 ### 출처
 
